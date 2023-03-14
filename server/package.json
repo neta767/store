@@ -1,0 +1,41 @@
+{
+  "name": "store",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "ts-node src",
+    "dev": "tsnd --respawn src",
+    "fix": "prettier --write src",
+    "lint": "eslint src/**/*.ts",
+    "build": "tsc",
+    "test": "mocha -r ts-node/register src/**/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.14",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.11.9",
+    "@types/pg": "^8.6.6",
+    "@types/yargs": "^17.0.22",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "ts-node": "^10.9.1",
+    "tsnd": "^1.1.0",
+    "typescript": "^4.9.4",
+    "yargs": "^17.6.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "chai": "^4.3.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "linked-list-typescript": "^1.0.15",
+    "mocha": "^10.2.0",
+    "pg": "^8.8.0",
+    "prettier": "^2.8.4"
+  }
+}
